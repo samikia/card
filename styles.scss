@@ -1,0 +1,51 @@
+// Colors
+$primary-cyan: hsl(179, 62%, 43%);
+$bright-yellow: hsl(71, 73%, 54%);
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+$dark-grayish-blue: hsl(218, 22%, 47%); // Added for better contrast
+
+// Typography
+$font-family-karla: 'Karla', sans-serif;
+$font-size-body: 16px;
+
+body {
+    font-family: $font-family-karla;
+    font-size: $font-size-body;
+    background-color: $light-gray;
+}
+
+.card {
+    max-width: 600px;
+    margin: 6rem auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, white 50%, $light-gray 50%);
+}
+
+.card-title {
+    color: $primary-cyan;
+}
+
+.btn-success {
+    background-color: $bright-yellow;
+    border-color: $bright-yellow;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn-success:hover {
+    background-color: darken($bright-yellow, 10%);
+    border-color: darken($bright-yellow, 10%);
+}
+
+ul {
+    padding-left: 20px;
+    color: $dark-grayish-blue; // Better contrast for text
+}
+
+h4 {
+    color: $primary-cyan; // Ensure heading color has good contrast
+}
